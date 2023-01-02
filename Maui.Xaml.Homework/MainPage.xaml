@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:homework="clr-namespace:Maui.Xaml.Homework"
+             x:Class="Maui.Xaml.Homework.MainPage">
+    <VerticalStackLayout Margin="15" Padding="30, 60, 30, 30">
+        <Label Text="Por favor, autentícate" FontSize="30" TextColor="{x:Static Member=homework:SharedResources.FontColor}" />
+        <Label Text="Nombre de usuario" TextColor="{x:Static Member=homework:SharedResources.FontColor}" />
+        <Entry HeightRequest="{OnPlatform Default=100, Android=500, iOS=500}" />
+        <Label Text="Contraseña" TextColor="{x:Static Member=homework:SharedResources.FontColor}" />
+        <Entry IsPassword="True" HeightRequest="{OnPlatform Default=100, Android=500, iOS=500}"></Entry>
+        <Button Text="Enviar" Background="#0094FF" Clicked="Button_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
